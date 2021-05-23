@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #20603D;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="240.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="164.0" prefWidth="193.0" spacing="10.0">
+               <children>
+                  <Label text="WINNER!!" textFill="#aba729">
+                     <font>
+                        <Font name="Noto Looped Thai Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="winnerVisor" editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 4.5;">
+                     <font>
+                        <Font name="Noto Looped Thai Bold" size="14.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="164.0" prefWidth="193.0" spacing="10.0">
+               <children>
+                  <Label text="LEADERBOARD" textFill="#aba729">
+                     <font>
+                        <Font name="Noto Looped Thai Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="leaderBoardVisor" editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 4.5;">
+                     <font>
+                        <Font name="Noto Looped Thai Bold" size="14.0" />
+                     </font></TextArea>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#backToMainMenu" style="-fx-background-color: #7c1717;" text="MAIN MENU" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="31.63" offsetX="1.5" offsetY="1.25" radius="15.684999999999999" width="33.11" />
+         </effect></Button>
+   </children>
+</VBox>
